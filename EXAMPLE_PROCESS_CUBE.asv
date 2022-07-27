@@ -1,5 +1,5 @@
  
-%Add code libraries to matlab path. 
+%clear 
 close all;
 addpath(genpath('C:\Sites\CopterCurrents'));
 addpath(genpath('C:\Sites\Current_Inversion_NTNU'));
@@ -72,7 +72,7 @@ wavenumbers = 6*dk:kW:1.6;
 %Define parameters specific to the k-dependent Doppler shift extraction and
 %PEDM
 
-frequencyLimits = [0.0,Inf];%frequency limits for masking the spectrum [min max], rad/sec
+frequencyLimits = [0.0,6.0];%frequency limits for masking the spectrum [min max], rad/sec
 
 % Ux current limits [m/s]
 Ux_limits = 1.0*[-1.0 1.0];
